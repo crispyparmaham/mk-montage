@@ -1,0 +1,60 @@
+/*BANNER*/
+
+.aktion-banner
+    position: relative
+    margin-top: 20px
+
+.bannerOverlay
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background: rgb(0,0,0)
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.2) 100%)
+    z-index: 1
+
+.aktion-banner img
+    width: 100%
+
+.bannerTextWrap
+    position: absolute
+    left: 50px
+    bottom: 50px
+    z-index: 2
+
+.bannerHeading
+    font-size: 38px
+    font-weight: 800
+    text-transform: uppercase
+    color: #fff
+    margin-bottom: 25px
+
+.ctaButton-red
+    background: $secondary
+    color: #fff
+    width: fit-content
+    padding: 12px 32px
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase 
+
+    &:hover
+        background: $redHover
+
+
+/*ANGEBOTE*/
+
+#startseite-angebote-wrapper
+    margin-top: 100px
+
+.startseite-wrapper .angebotswrapper
+    margin-bottom: 80px
+    position: relative
+    display: grid
+    grid-template-columns: repeat(3,33.33%)
+
+.startseite-wrapper .artangebote_outer_frame    
+    width: 100%

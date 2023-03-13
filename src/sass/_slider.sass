@@ -49,7 +49,131 @@
     object-fit: cover
 
 
+/*TOP-MARKEN*/
+
+.top-marken-wrapper
+    max-width: 1250px
+    padding: 50px 0 0
+
+.top-marken-wrapper .top-marken-slider
+    max-width: 1250px
+    position: relative
+
+.top-marken-wrapper .top-marken-slider .slick-list
+    overflow: hidden
+
+.top-marken-wrapper .top-marken-slider .slick-list>.slick-track
+    display: flex
+
+.top-marken-wrapper .top-marken-slider .top-marke
+    background: $catBox
+    height: 180px !important
+    color: #051836
+    display: flex
+    font-size: 16px
+    font-weight: 700
+    height: auto
+    margin: 0 7.5px
+    overflow: hidden
+    position: relative
+    text-decoration: none
+    transition: background-color .4s ease
+    align-items: center
+    justify-content: center
+
+.top-marken-wrapper .top-marken-slider .top-marke .fw-link
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 9
+
+.top-marken-wrapper .top-marken-slider .top-marke>img 
+    transition: transform .4s ease
+    min-width: 150px
+    object-fit: cover
+    position: relative
+
+.top-marken-wrapper .top-marken-slider .top-marke .top-marke-text-wrap
+    background: $primary
+    align-items: center
+    display: flex
+    flex-direction: column
+    padding: 0 15px 15px
+    position: relative
+    text-align: center
+    z-index: 2
+
+.top-marken-wrapper .top-marken-slider .top-marke .top-marke-text-wrap>div
+    align-items: center
+    background: #fff
+    display: flex
+    height: 50px
+    justify-content: center
+    margin: -50px auto 0
+    padding: 0.75em
+    transition: box-shadow .4s ease
+    width: 50%
+
+.top-marken-wrapper .top-marken-slider .top-marke .top-marke-text-wrap>div>img
+    height: auto
+    max-height: 100%
+    max-width: 100%
+    -o-object-fit: contain
+    object-fit: contain
+
+.top-marken-wrapper .top-marken-slider .top-marke .top-marke-text-wrap>span
+    color: white
+    padding-top: 15px
+    transition: color .4s ease
+
+.top-marken-wrapper .top-marken-slider .top-marke:hover>img
+    transform: scale(1.05)
+
+
 /*BUTTONS
 
-.slick-prev:before, .slick-next:before
+body .slick-next, body .slick-prev
     background: $darkGrey
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%)
+    height: 50px !important
+    width: 50px
+    top: 50%
+    transition: all .4s ease
+    z-index: 99
+
+body .slick-next:before, body .slick-prev:before
+    color: #fff
+    display: block
+    font-family: inherit
+    font-size: 30px
+    line-height: 1
+    margin: 0 auto
+    opacity: 1
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+body .slick-prev:before
+    content: "❮"!important
+
+body .slick-next:before
+    content: "❯"!important
+
+body .slick-prev
+    left: 50px
+    transform: translate(-50%, -50%)
+
+body .slick-next
+    right: 50px
+    transform: translate(50%, -50%)
+
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus
+    outline: none
+    background: $secondary
+
+body .slick-next:focus:before, body .slick-next:hover:before, body .slick-prev:focus:before, body .slick-prev:hover:before
+    color: #fff
