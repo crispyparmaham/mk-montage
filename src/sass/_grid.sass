@@ -4,6 +4,7 @@
     background: #F8F8F8
 
 .startseite-content-wrapper
+    position: relative
     max-width: 1300px
     margin: auto
 
@@ -14,6 +15,42 @@
 
 .head-slider-link-wrap
     padding-bottom: 80px
+
+.infoBoxContainer
+    width: calc(100% - 20px)
+    display: grid
+    grid-template-columns: repeat(2, 50%)
+    gap: 20px 
+    margin-bottom: 120px
+
+#bottom-content-wrapper
+    background: #F8F8F8
+    padding: 250px 0 50px 0
+
+#bottom-content-wrapper
+    &::before
+        background: #F8F8F8
+        content: ""
+        height: 100%
+        left: -100%
+        position: absolute
+        top: 0
+        width: 100%
+
+#bottom-content-wrapper
+    &::after
+        background: #F8F8F8
+        content: ""
+        height: 100%
+        right: -100%
+        position: absolute
+        top: 0
+        width: 100%
+
+#bottomInfoBox
+    position: relative
+    z-index: 1
+    margin-bottom: -150px
 
 
 /*ANGEBOTE*/
