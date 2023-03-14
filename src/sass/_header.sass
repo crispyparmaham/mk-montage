@@ -1,4 +1,122 @@
+/*USP HEADER*/
+
+body #top_wrapper.template_wrapper .usp_header
+    background: $primary
+    color: #fff
+    display: block
+    position: relative
+    height: fit-content
+    top: 0
+
+body #top_wrapper.template_wrapper .usp_header .contentholder
+    height: auto
+    max-width: none
+
+body #top_wrapper.template_wrapper .usp_header .contentholder .user_content
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 10px
+
+.usp_header .contentholder .user_content div
+    padding-left: 1%
+    width: auto
+    float: left
+
+body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col
+    align-items: center
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    opacity: .9
+
+    
+body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col>img
+    margin-right: 15px
+    height: 34px
+    width: auto
+    margin-top: 0
+
+body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col>span
+    color: #fff
+    font-family: $regular
+    font-size: 20px
+    font-weight: 600
+    letter-spacing: .5px
+
+
+@media (max-width: 1280px)
+    body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col>img
+        margin-right: 15px
+        height: 25px !important
+
+    body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col>span
+        font-size: 16px
+
+@media (max-width: 992px)
+    body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col:nth-child(3)
+       display: none
+
+@media (max-width: 768px)
+    body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp-header-col:nth-child(4)
+       display: none
+
+    .usp_header .contentholder .user_content div 
+        width: 50%
+
+
+/*OVER SEARCH TEXT*/
+    
+.osearchtext div
+    height: auto !important
+
+.oversearch-wrapper
+    margin-bottom: 10px
+    text-align: left
+
+.oversearch-wrapper .phone-wrap
+    align-items: center
+    display: flex
+    margin-left: 0
+    margin-right: auto
+
+.oversearch-wrapper .phone-wrap a
+    color: $primary
+    font-family: $regular
+    font-size: 1.6em
+    font-weight: 700
+    letter-spacing: .3px
+    padding-left: 10px
+    
+.oversearch-wrapper p
+    color: $primary
+    margin: 0.25em 0 0
+
+
+/*SEARCH BAR*/
+
+.template_header_item #template_search_text
+    background: $catBox
+    box-shadow: none
+    border-radius: 2px
+    border: 0
+    text-transform: uppercase
+
+#template_header .template_header_item #template_search_submit
+    background: $primary
+    border-radius: 0 2px 2px 0
+
+#template_header .template_header_item #template_search_submit
+    &:hover
+        background: $secondary
+
+
+
 /*LOGO*/
+
+#template_header #template_logo
+    margin-top: 15px
 
 #template_header #template_logo img
     width: 150px
@@ -8,3 +126,90 @@
 
 #template_header
     height: auto
+
+#template_header .contentholder
+    max-height: fit-content
+
+#template_header_list
+    margin-top: 15px
+
+
+/*NAV*/
+
+#template_header #template_main_nav
+    background: $primary
+    position: relative
+
+#template_main_nav li.template_nav_sortiment_button
+    width: fit-content
+
+#template_main_nav li.template_nav_sortiment_button
+    background: $primary !important
+
+#template_main_nav li.template_nav_sortiment_button
+    &:hover
+        background: $secondary !important
+
+#template_header #template_main_nav > li > a
+    &:hover
+        background: $secondary !important
+
+#template_header #template_main_nav > li > a
+    color: #fff !important
+    padding: 15px 30px !important
+    
+@media (min-width: 1199px)
+    #template_header #template_main_nav:before
+        background: $primary
+        content: ""
+        height: 100%
+        left: -100%
+        position: absolute
+        top: 0
+        width: 100%
+
+    #template_header #template_main_nav:after
+        background: $primary
+        content: ""
+        height: 100%
+        right: -100%
+        position: absolute
+        top: 0
+        width: 100%
+
+/*ICONS*/
+
+.template_header_item > a
+    border: none
+    background: $catBox
+    height: auto
+    padding: 10px
+    font-size: inherit
+    border-radius: 2px
+
+
+.template_header_item > a
+    &:hover
+        background: #DBDBDB
+
+
+.template_header_item a > i
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 0
+
+.template_account, .template_cart
+    margin-top: 30px
+
+.template_cart_desc, .template_account_desc
+    margin: 0
+    color: $primary
+    font-size: 12px
+    font-weight: 800
+    text-transform: uppercase
+
+.mdi-account:before, .mdi-cart:before
+    color: $primary
+    font-size: 30px
