@@ -11,4 +11,6 @@ Change URL of Shop in gulpfile.js: https://github.com/matthiasmarx/starter-code-
 
 When everything is ready start with "npm run dev"
 
+&template=basis_shop_template_8
+
 https://www.mk-montagetechnik-shop.de/index.php?page=DEV_Startseite&SessID=5e03d16a2bef2211ed1510c64f818e5c
