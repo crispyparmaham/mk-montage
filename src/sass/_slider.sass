@@ -158,11 +158,13 @@ body .slick-next:before, body .slick-prev:before
     top: 50%
     transform: translate(-50%, -50%)
 
-body .slick-prev:before
-    content: "❮"!important
+body .slick-prev
+    &:before
+        content: "❮"!important
 
-body .slick-next:before
-    content: "❯"!important
+body .slick-next
+    &:before
+        content: "❯"!important
 
 body .slick-prev
     left: 50px
@@ -175,7 +177,7 @@ body .slick-next
 
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus
     outline: none
-    background: $secondary
+    background: $secondary !important
 
 body .slick-next:focus:before, body .slick-next:hover:before, body .slick-prev:focus:before, body .slick-prev:hover:before
     color: #fff
