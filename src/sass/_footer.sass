@@ -96,3 +96,49 @@
     background: #fff
     padding: 10px
     margin: 4px
+
+
+
+/*MEDIA*/
+
+@media (max-width: 850px)
+    #template_footer ul
+        width: 100% !important
+
+    #template_footer .template_footer_row
+        flex-direction: column
+
+    #template_footer ul:first-child
+        width: 100% !important
+
+
+@media (max-width: 600px)
+    #template_footer_wrapper .col-wrap-50-50
+        flex-direction: column
+
+    #template_footer_wrapper .footer-col-50
+        margin-right: 0 !important
+
+@media (max-width: 450px)
+    #template_footer_wrapper .col-wrap-50-50
+        align-items: center
+        text-align: center
+
+    #template_footer ul
+        display: flex
+        justify-content: center
+
+    #template_footer_wrapper .footer-col-100 
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    .zahlungsmethoden
+        display: flex
+        margin-bottom: 40px
+
+    .zahlungsmethoden img
+        padding: 0
+
+    .footer-contact-wrapper #tel
+        font-size: 26px

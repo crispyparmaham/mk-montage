@@ -7,7 +7,7 @@
     position: relative
 
 .service-box
-    width: calc(25% - 15px)
+    width: calc(25% - 12px)
     height: 200px 
     background: $catBox
     display: flex
@@ -27,3 +27,20 @@
 .service-box
     &:hover
         border-bottom: 5px solid $secondary
+
+
+
+@media (max-width: 1020px)
+    .service-box-wrap
+            margin-top: -65px
+
+    .service-box
+        width: calc(33% - 7.5px)
+
+
+@media (max-width: 786px)
+    .service-box-wrap
+            margin-top: -45px
+
+    .service-box
+        width: calc(50% - 7.5px)

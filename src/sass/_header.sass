@@ -184,6 +184,35 @@ body #top_wrapper.template_wrapper .usp_header .contentholder .user_content .usp
         top: 0
         width: 100%
 
+@media (max-width: 960px)
+    .template_account, .template_cart
+        margin-top: 10px !important
+
+    #template_header .template_header_item > a
+        padding: 0 !important
+        display: flex !important
+        align-items: center !important
+        justify-content: center !important
+
+    #template_header #template_main_nav > li > a
+        font-size: 16px
+        padding: 15px !important
+
+@media (max-width: 480px)
+    #template_header .contentholder
+        position: relative !important
+
+    #template_header #template_header_list
+        position: absolute !important
+
+    #template_header #template_logo
+        padding: 0 !important
+
+@media only screen and (max-width: 30em)
+    .sticky_logo_mini_position
+        position: inherit
+
+
 /*ICONS*/
 
 .template_header_item > a

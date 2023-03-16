@@ -17,7 +17,9 @@
     z-index: 1
 
 .infoBox img
-    width: 100%
+    width: 100% !important
+    height: 100% !important
+    object-fit: cover
 
 .boxTextWrap
     position: absolute
@@ -43,3 +45,44 @@
 
     &:hover
         background: $redHover
+
+
+
+@media (max-width: 1400px)
+    .startHeading
+        font-size: 45px
+        margin-top: 18px
+
+    .startSubHeading
+        font-size: 16px
+
+
+@media (max-width: 1220px)
+    .template_full_column 
+        padding: 0 20px !important
+
+
+@media (max-width: 920px)
+    .infoBox
+        height: 350px
+
+    .boxHeading
+        font-size: 26px
+        margin-bottom: 15px
+
+    .boxTextWrap
+        left: 30px
+        bottom: 30px
+
+
+@media (max-width: 680px)
+    .infoBoxContainer 
+        grid-template-columns: repeat(1,100%)
+        width: 100%
+
+    .startHeading
+        font-size: 32px
+        margin-top: 18px
+
+    .startSubHeading
+        font-size: 16px

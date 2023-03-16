@@ -14,6 +14,7 @@
 /*TOP-SLIDER*/
 
 .startTextWrap
+    width: 100%
     position: absolute
     left: 50%
     top: 50%
@@ -48,9 +49,14 @@
     min-width: 100%
 
 #top-slider .slick-slide img
-    width: 100%
+    width: 100% !important
     height: 600px
     object-fit: cover
+
+
+@media (max-width: 786px)
+    #top-slider .slick-slide img
+        height: 450px !important
 
 
 /*TOP-MARKEN*/
@@ -188,3 +194,11 @@ body .slick-next:focus:before, body .slick-next:hover:before, body .slick-prev:f
 
 .top-marken-slider .slick-next
     right: 0
+
+
+@media (max-width: 680px)
+    body .slick-prev
+        left: 30px
+
+    body .slick-next
+        right: 30px
